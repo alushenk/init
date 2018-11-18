@@ -1,0 +1,28 @@
+# https://en.wikipedia.org/wiki/Broadcast_address
+# The broadcast address for an IPv4 host can be obtained by 
+# performing a bitwise OR operation between the bit complement 
+# of the subnet mask and the host's IP address.
+# (IP or not MASK actually) 
+
+printf "my ip address: "
+ipconfig getifaddr en0
+# or 
+# networksetup -getinfo Ethernet | sed -n 2p | awk '{print $3}'
+# or
+# networksetup -getinfo Ethernet | awk 'NR==2{print $3}'
+
+BROADCAST=$(ifconfig en0 | grep 'inet ' | awk '{print $6}')
+echo "broadcast: $BROADCAST"
+
+# refresh arp table (network statistic or something). 
+# just ping broadcast for 1 second then stops
+# ping $BROADCAST & sleep 1; kill $!
+# on linux it can be like
+# timeout 1s ping $BROADCAST
+# but I'm a hacker
+ping -t 1 $BROADCAST > /dev/null
+
+# http://osxdaily.com/2016/11/03/view-lan-device-ip-address-arp/
+# sort https://www.madboa.com/geek/sort-addr/
+echo IP addresses of current subnet:
+arp -i en0 -a | awk -F '[()]' '{print $2}' | sort -V
