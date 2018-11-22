@@ -1,3 +1,4 @@
+# https://www.freedesktop.org/software/systemd/man/systemd.service.html
 sudo systemctl restart ssh.service
 # or
 sudo service ssh restart
