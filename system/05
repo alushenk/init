@@ -1,0 +1,4 @@
+# https://askubuntu.com/questions/903354/difference-between-systemctl-and-service
+systemctl status ssh.service
+# or
+service ssh status

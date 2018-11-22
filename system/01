@@ -1,0 +1,5 @@
+# https://linuxconfig.org/check-what-debian-version-you-are-running-on-your-linux-system
+# The easiest way on how to check what Debian version you are running is to simply read a content of /etc/issue file. Example:
+cat /etc/issue
+# However, the above command may not show the current Debian update point releases. Thus you may get more accurate info with the following linux command:
+cat /etc/debian_version
