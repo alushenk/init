@@ -1,0 +1,8 @@
+w
+who -a
+users
+# who and users show who are currently logged on. You can also use last: 
+last
+# Last looks through /var/log/wtmp and displays a log of the last users logged on, including those currently logged on. 
+# Another possibility is to get the users-information from the systems logs: 
+grep sshd /var/log/messages
