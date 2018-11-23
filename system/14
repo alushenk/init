@@ -1,0 +1,2 @@
+# https://www.maketecheasier.com/run-bash-commands-background-linux/
+tail -f /var/log/syslog &>/dev/null &

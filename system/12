@@ -1,0 +1,2 @@
+# sort by human readable arguments & reverse
+sudo du -h /var/* --max-depth=0 | sort -hr
