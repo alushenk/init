@@ -1,0 +1,14 @@
+# at first we need to find IP which belong to domain
+# nslookup slash16.org
+# or
+# host slash16.org
+# find provider by IP
+# whois <IP>
+
+HOSTS=$(host slash16.org | awk '/address/{print $4}')
+for i in $HOSTS
+do
+    echo $i
+    whois $i
+done
+
