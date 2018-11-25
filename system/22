@@ -5,3 +5,6 @@ sudo adduser new_user_name
 # or:
 
 sudo useradd new_user_name
+
+# (optional) add the user to the sudo group
+usermod -aG sudo username
