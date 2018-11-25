@@ -1,0 +1,7 @@
+# 1. vagrant up
+# 2. vagrant ssh
+# 3. vagrant halt
+
+Vagrant.configure("2") do |config|
+    config.vm.box = "debian/jessie64"
+end
