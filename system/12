@@ -1,2 +1,6 @@
+# Figure out the exact size of each folder of /var in a humanly understandable way
+# followed by the path of it.
+
 # sort by human readable arguments & reverse
+
 sudo du -h /var/* --max-depth=0 | sort -hr

@@ -1,0 +1,13 @@
+# Find the command that kills ssh service
+
+# stop cat abuse!
+
+sudo kill $(< /var/run/sshd.pid)
+
+# or
+
+systemctl stop ssh.service
+
+# or
+
+systemctl kill ssh.service

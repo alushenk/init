@@ -1,0 +1,7 @@
+# Explain how connect yourself as new user. (With graphic session and ssh session)
+
+# connect via ssh
+
+ssh -p 3022 username@127.0.0.1
+
+# via GUI just click "Switch User" or "Log Out" and log in as a new user

@@ -1,0 +1,14 @@
+# Find the command that allows you to connect via ssh on the VM.(In parallel with
+# the graphic session)
+
+# openssh-server need to be installed in guest VM
+# 1. forward some free local port to port 22 of VM
+# grafic mode http://wiredrevolution.com/virtualbox/setup-ssh-access-between-virtualbox-host-and-guest-vms
+# or from the command line https://stackoverflow.com/questions/5906441/how-to-ssh-to-a-virtualbox-guest-externally-through-a-host
+
+VBoxManage modifyvm myserver --natpf1 "ssh,tcp,,3022,,22"
+
+# 2. reboot the machine
+# 3. to SSH into the guest VM, write:
+
+ssh -p 3022 user@127.0.0.1

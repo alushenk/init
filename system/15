@@ -1,1 +1,5 @@
+# Find the command that kills the background command’s process
+
+# kill process by its name
+
 sudo pkill tail

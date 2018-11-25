@@ -1,0 +1,7 @@
+# List all existing users on the VM
+
+cat /etc/passwd
+
+# or by displaying posible completions
+
+compgen -u

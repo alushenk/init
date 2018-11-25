@@ -1,2 +1,5 @@
+# Run the ‘tail -f /var/log/syslog‘ command in background
+
 # https://www.maketecheasier.com/run-bash-commands-background-linux/
+
 tail -f /var/log/syslog &>/dev/null &

@@ -1,7 +1,13 @@
+# What file has to be modified to make it permanent?
+
 # https://wiki.debian.org/HowTo/ChangeHostname
+
 /etc/hostname
+
 # find all references to server1 and replace with new name
+
 /etc/hosts
+
 # then restart system 
 # or 
 # reload configuration files /etc/init.d/hostname.sh start
