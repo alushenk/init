@@ -1,0 +1,13 @@
+# Thanks previously answer and DNS sever find your hostname
+
+# we can find hotname simply by typing:
+
+hostname
+
+# or ask default DNS server (/etc/resolv.conf -> 10.51.1.253) for our ip 
+# we may not pass DNS argument to nslokup because its used by default
+
+DNS=$(cat /etc/resolv.conf |grep nameserver | awk '{print $2}')
+IP=$(ipconfig getifaddr en0)
+
+nslookup $IP $DNS | grep name |awk '{print $4}'

@@ -1,0 +1,5 @@
+# What file contains the local DNS entries?
+
+# https://en.wikipedia.org/wiki/Hosts_(file)
+
+/etc/hosts

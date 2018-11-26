@@ -1,3 +1,5 @@
+# Identify the MAC address of the Wi-Fi card
+
 # get the name of wireless interface
 # https://apple.stackexchange.com/questions/250107/wlan0-on-a-mac
 NAME=$(system_profiler SPNetworkDataType | grep Wi-Fi -A12 | grep "BSD Device Name" | awk '{print $4}')

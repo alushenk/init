@@ -1,3 +1,8 @@
+# Identify and display the Ethernet interface characteristics:
+# (a) Indentify broadcast address
+# (b) Indentify all IP adresses which are part of the same subnet
+
+
 # https://en.wikipedia.org/wiki/Broadcast_address
 # The broadcast address for an IPv4 host can be obtained by 
 # performing a bitwise OR operation between the bit complement 

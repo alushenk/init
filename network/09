@@ -1,0 +1,22 @@
+# Find the external IP of 42.fr
+
+# dig 42.fr
+# or
+# host 42.fr
+# or
+# nslookup 42.fr
+
+# output of dig 42.fr
+
+;; ANSWER SECTION:
+42.fr.			609	IN	A	163.172.250.13
+42.fr.			609	IN	A	163.172.250.12
+42.fr.			609	IN	A	163.172.250.11
+
+;; AUTHORITY SECTION:
+42.fr.			609	IN	NS	ns1.42.fr.
+42.fr.			609	IN	NS	ns2.42.fr.
+
+;; ADDITIONAL SECTION:
+ns1.42.fr.		609	IN	A	62.210.35.131
+ns2.42.fr.		609	IN	A	62.210.35.132
